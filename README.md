@@ -1,7 +1,18 @@
 ## About
 
-This project was developed following the Frontend Software Engineer - Technical Challenge Requirements.
+This project was developed following the Frontend Engineer - Technical Challenge Requirements.
 
+FOR THE FIRST CHALLENGE, DO THE FOLLOWING :
+  - [x] Verify if you have Python already, installed, if not, chekc this source and follow the steps depending on your OS - [Python](#https://www.python.org/downloads/).
+  - [x] Download this repository. 
+  - [x] Navigate to the repository folder.
+  - [x] Execute the following command on your Shell - python string_delete_vowels.py.
+  - [x] Type the String you want to test.
+  You should see the following outcome
+  ![image](https://github.com/user-attachments/assets/fee568ff-2250-4d93-bb6e-727316619f09)
+
+
+FOR THE SECOND CHALLENGE, CHECK THE FOLLOWING CONTENT
 ## Menu
 - [Features](#features)  
 - [How It Works](#how-it-works)  
@@ -12,11 +23,10 @@ This project was developed following the Frontend Software Engineer - Technical 
 
 ## Features
 
-- [ ] User will be able to trigger a validation Process Divided by three steps :
-  - [x] Person should exist in the national registry system and should match the information in local database.
-  - [x] Person does not have any juditial records in the national archives' external system.
-  - [x] System internal validation process outputing a Score between 0 and 100. 
-- [ ] User will be able to see the prospects and leads information.
+These are the features for the challenge.
+- [ ]  User will be able to search the 10 first movies the OMDB - Api, including :
+  - [x] Display basic information per movie.
+  - [x] Check a list displaying a Count per release year.
 
 ---
 
@@ -25,107 +35,98 @@ This project was developed following the Frontend Software Engineer - Technical 
 The Project structure is the following :
 	
 	public/
-	│── icons/
+	│── img/
 	│── index.html
 	src/
+	│── api/
+	│   │── omdb.ts
 	│── components/
-	│   │── Header/
-	│   │── PotentialProspects/
-	│   │   │── PeopleList/
-	│   │   │   │── SinglePerson/
-	│   │   │   │   │── SinglePerson.jsx
- 	│   │   │   PeopleList.jsx
-	│   │   │── SinglePersonModal/
- 	│   │   │   │   │── SinglePerson.jsx
-	│   │   │   PotentialProspects.jsx
+	│   │── MoviesCounter/
+	│   │   │── MoviesCounter.tsx
+	│   │── MoviesSearch/
+	│   │   │── MoviesSearch.tsx
+ 	│   │── MoviesViewer/
+  	│   │   │── MovieCard/
+	│   │   │   │── MovieCard.tsx
+ 	│   │   │── MoviesViewer.tsx
 	│   │── UI/
-	│   │   │── Box/
+	│   │   │── Aside/
 	│   │   │── Button/
-	│   │   │── Icon/
-	│   │   │── Modal/
-	│   │   │── Spinner/
-	│   │   │── Subtitle/
- 	│   │   │── Title/
+	│   │   │── Image/
+	│   │   │── Input/
 	│   │   │── Text/
-	│── context/
-	│   │── leadsContext/
-	│   │   │── leadsContext.jsx
-	│── data/
-	│   │── leads_data.js
+ 	│   │   │── Title/
+  	│── models/
+   	│   │── Movie.ts
+      	│── pages/
+   	│   │── Home.tsx
 	│── services/
-	│   │── judicialRecordsValidation.js
-	│   │── matchesInformationValidation.js
-	│   │── qualificationScoreValidation.js
+	│   │── moviesServices.ts
+	│── texts/
+	│   │── texts.ts
+	│── services/
+	│   │── moviesServices.ts
 	│── App.css
-	│── App.js
-	│── App.test.js
-	│── index.css
+	│── App.tsx
 
 #### Folder Descriptions
 - public/: Contains public files accessible directly, such as index.html and icons.
 - src/: The project's main source code.
-  - components/: Contains reusable UI components.
-    - Header/: The main header component, it contains instructions.
-    - PotentialProspects/: Manages the leads/prospects lists and details of potential prospects.
-      -  PeopleList/: Manages the leads/prospects display
-         - SinglePerson/: Manage a single lead/prospect display and triggers the validation process.
-      -  SinglePersonModal/: Manages the Modal where the user can see the selected lead/prospect information and validation process.
-         - ProspectProgress/: Tracks the lead/prospect validation process step by step.     
-    - UI/: Reusable UI components such as buttons, modals, and boxes.
-  - context/:
-    - leadsContext/: Holds Context data and modifiers for the Leads-Prospects List. 
-  - data/: Mock data used for testing purposes, holds the Leads data.
-  - services/: External validators' logic.
-- App.js: Root component of the application.
-- index.css: Global styles. 
+  - components/: Contains the App components.
+    - MoviesCounter/: Contains the movie counters by release age by ascending order.
+    - MoviesSearch/: Manages the movie search bar.
+    - MoviesViewer/: Contains the movies grid display.
+      -  MovieCard/: Manages each movie display.
+    - UI/: Reusable UI components such as buttons, containers and texts.
+  - models/: Contains the App models
+    - Movie/: Represents the movie structure for all the project to use/reference.
+  - pages/: Contains the App pages
+    - Home/: Contains all the significant components and manages its display.
+  - texts/: Contains all the static texts in the App.
+  - services/: Manages the logic behind the Movies fetching.
+- App.tsx: Root component of the application.
+- App.css: Global styles. 
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/db42ae01-4acc-41d7-881b-5cf28f5b581c)
-![image](https://github.com/user-attachments/assets/84e7b64c-db60-4f3f-941a-2e158fc5dfda)
-![image](https://github.com/user-attachments/assets/5101f494-2a53-499b-9af0-b85b5ec7200c)
-![image](https://github.com/user-attachments/assets/61e0801c-a284-40ba-9036-b608b0cb3927)
+![image](https://github.com/user-attachments/assets/3be7bbec-192c-41b9-ad4e-d4e7e329f854)
+![image](https://github.com/user-attachments/assets/e35434b7-f2fb-4c16-869a-675ce4d82554)
+![image](https://github.com/user-attachments/assets/333ea1a0-2a3e-4f6d-9512-4032d8aeaa74)
+![image](https://github.com/user-attachments/assets/72e80803-ad07-440d-bcd9-8e1f7bfddd7d)
 
 ## Decisions, assumptions and improvements
 
-An early assumption was made while approaching the external system integration and execution, appreciating 
-the fact that a single lead information contains the following data. It was easier to make some dummy processes to simulate asynchronous
-calls imitating the external services execution
-	
-	 {
-	    id: 'c1',
-	    national_id_number: '456-78-9012',
-	    first_name: 'Alice',
-	    last_name: 'Has Judicial Records Johnson',
-	    email: 'alicejohnson@mail.com',
-	    birthdate: '1990-01-01',
-	    matchesPersonalInformation: true,
-	    hasJudicialRecords: true,
-  	},
+An early assumption made was to approach differently the third requirement in the test, which was displaying the movies per year and director, since
+implementing that would have required 11 API Calls per Search, as the director data was only retrieved when searching per movie ID, so it would require 
+one call per movie, including the previous search call per title. Instead of that approach, the count is only limited to the release year.
 
-Considering that, the services are structured as a single validation and a short delay to visualize on how the last process had to wait
-for the prior ones to conclude so that it could execute. 
+Another early assumption was to use some Context for the data reception for different components mainly. However, the Home component creation addressed some 
+possible prop drilling issues, so instead it was used as the main State container, also dividing it with a custom Hook, so that the both state and view 
+layers are separated and the code looks leaner. 
 
-Following with the interface decisions made. Some general decisions throughought the development where creating <strong>UI Components/strong> for basic elements 
-that worked as assets for more complex Components. Some of these have their own styling as default properties for a quicker/more simple 
-implementation for them.
+Considering that, the Search component gets the trigger function from the Home component so that the Movie Counter and Movie List update by the time the user 
+do the search. In addition, the state managing both counter and movie list are condensed into one, since they both update at the same time. 
 
-The project Core lays on the <strong>Potential Prospects</strong> Component, which is compounded by two Components. 
-First is the PeopleList, that is mainly in charge of rendering the two list, one for leads and the other one for prospects. 
-It has one single sub-component that renders each single register, which mainly holds a function given by Potential Prospects so that it triggers the validation/consult process.
+The search component is, in few words, a form with a single field, which not only will trigger the search process but will update the route as well.
+This route update was done to mimic a real search environment, which interacts not only with the interface but with the browser.
 
-On the other hand, the second component is the SinglePersonModal, whose render depends on the previous trigger mentioned. It contains at first default information for both
-consult and validation process. 
-By the time the user wants to validate the selected user, SinglePersonModal renders its single sub-component ProspectProgress, that is in charge
-of displaying the three step validation process, making use of the provided services for that matter.
+The movie List component is in charge of rendering the first ten movies based on the search process. 
+It follows the requested design using a grid display that adjust not only on desktop but on mobile view. Displaying the movie title, release year, Imdb ID and image. 
 
-Since the validation process from SinglePersonModal updates the UI for both lists on the PeopleList, there is a leadsContext implemented, in order to create a leaner data update. 
+Finally, a short mention to make, is that the App Component has a Router aggregate in case the project has some improvements such as routes, the project would be already
+set for them to implement.
 
 #### Improvements 
 
-Some improvements that could be done, with the current proposal, are implementing a discarded pool of rejected leads in order to visualize them and also attach the rejection cause.
-In other matters, it could be a little better to have a wireframe of the solution in order to avoid some misunderstandings, however, it could lead to some restrictions to measure the
-creativeness of the participant. In conclusion, I consider this test a well structured approach to test both hard and soft skills related to the participant as an individual.
+Some improvements that could be done, in first place, would be to generate a testing environment and unit tests, in order to check if everything executes as intended 
+whenever the project require any modification. 
+Other improvements could be to make the user be capable of revising on the full movie information throughout a modal by clicking the movie card.
+One last improvement that could be done is to make a paginator, since now it will show the user the first 10 results, this could be straightforward since the API already 
+gives the number of results inside the response and it also has the capability of pagination.
+
+## Access
+
+You can visit this App by clicking the following Link : [Fox Ordering Movie Viewer] (https://fox-ordering-tech-task.vercel.app/).
 
 ## Pre-requisites
 
@@ -139,17 +140,14 @@ It is required to have the following tools installed on the machine:
 # Clone this repository
 $ git clone git@github.com
 
-# Access the project folder 
+# Access the project folder (movie-viewer)
 
-# Install the dependencies
+# Install the dependencies 
 $ npm install
 
 # Run the application in development mode
-$ npm start
+$ npm run start
 
 # The application will open on the port: 3000 - go to http://localhost:3000
-
-# Run the testing scripts
-$ npm run test
 
 ```
