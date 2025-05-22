@@ -3,12 +3,16 @@
 This project was developed following the Frontend Engineer - Technical Challenge Requirements.
 
 FOR THE FIRST CHALLENGE, DO THE FOLLOWING :
-  - [x] Verify if you have Python already, installed, if not, chekc this source and follow the steps depending on your OS - [Python](#https://www.python.org/downloads/).
+  - [x] Verify if you have Python already, installed, if not, chekc this source and follow the steps depending on your OS - [Python](https://www.python.org/downloads/).
   - [x] Download this repository. 
   - [x] Navigate to the repository folder.
   - [x] Execute the following command on your Shell - python string_delete_vowels.py.
   - [x] Type the String you want to test.
+  
+  
   You should see the following outcome
+
+  
   ![image](https://github.com/user-attachments/assets/fee568ff-2250-4d93-bb6e-727316619f09)
 
 
@@ -40,6 +44,8 @@ The Project structure is the following :
 	src/
 	│── api/
 	│   │── omdb.ts
+ 	│── pages/
+	│   │── Home.tsx
 	│── components/
 	│   │── MoviesCounter/
 	│   │   │── MoviesCounter.tsx
@@ -58,8 +64,6 @@ The Project structure is the following :
  	│   │   │── Title/
   	│── models/
    	│   │── Movie.ts
-      	│── pages/
-   	│   │── Home.tsx
 	│── services/
 	│   │── moviesServices.ts
 	│── texts/
@@ -120,18 +124,20 @@ set for them to implement.
 
 Some improvements that could be done, in first place, would be to generate a testing environment and unit tests, in order to check if everything executes as intended 
 whenever the project require any modification. 
+
 Other improvements could be to make the user be capable of revising on the full movie information throughout a modal by clicking the movie card.
-One last improvement that could be done is to make a paginator, since now it will show the user the first 10 results, this could be straightforward since the API already 
+
+One last improvement that could be done is to make a paginator, this could be straightforward since the API already 
 gives the number of results inside the response and it also has the capability of pagination.
 
 ## Access
 
-You can visit this App by clicking the following Link : [Fox Ordering Movie Viewer] (https://fox-ordering-tech-task.vercel.app/).
+You can visit this App by clicking the following Link : [Fox Ordering Movie Viewer](https://fox-ordering-tech-task.vercel.app/).
 
 ## Pre-requisites
 
 It is required to have the following tools installed on the machine:
-[Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 
 ## Running the web application
 
