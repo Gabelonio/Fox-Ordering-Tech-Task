@@ -4,6 +4,7 @@ const texts = {
     loading: "Loading...",
     noResults: "No results found",
     noResultsDefault: "Search movies using the field above",
+    error: "There was a problem fetching the movies : ",
   },
   counter: {
     title: "Movies Per Year",

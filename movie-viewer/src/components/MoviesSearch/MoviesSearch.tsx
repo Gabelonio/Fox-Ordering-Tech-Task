@@ -19,7 +19,6 @@ export default function MoviesSearch({ onSearch }: Props) {
     setDefaultValue(param);
 
     if (param) {
-      console.log("param", param);
       onSearch(param);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -32,7 +31,6 @@ export default function MoviesSearch({ onSearch }: Props) {
 
     setSearchParams({ search: value });
     
-      console.log("search", value);
     onSearch(value);
   };
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Movie } from "../../../models/Movie";
 import Image from "@components/UI/Image/Image";
 import Title from "@components/UI/Title/Title";
