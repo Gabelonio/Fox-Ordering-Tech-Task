@@ -1,4 +1,4 @@
-## About
+## About 🦊
 
 This project was developed following the Frontend Engineer - Technical Challenge Requirements.
 
