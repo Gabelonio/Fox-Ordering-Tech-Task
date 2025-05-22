@@ -1,0 +1,29 @@
+.container {
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--fox-primary);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row; 
+}
+
+.infoText {
+  text-align: center;
+  color: var(--fox-secondary);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+}

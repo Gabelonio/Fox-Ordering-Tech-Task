@@ -1,0 +1,25 @@
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.movieCard {
+  grid-column: span 4;
+}
+
+.movieCard:nth-child(5n),
+.movieCard:nth-child(5n - 1) {
+  grid-column: span 6;
+}
+
+@media (max-width: 794px) {
+  .movieCard,
+  .movieCard:nth-child(5n),
+  .movieCard:nth-child(5n - 1) {
+    grid-column: span 12;
+  }
+}

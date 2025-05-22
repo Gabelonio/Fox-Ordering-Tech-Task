@@ -1,0 +1,32 @@
+.moviesListContainer {
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.moviesListContainer h3 {
+  color: var(--fox-primary);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.moviesListContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.moviesListContainer li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.moviesListContainer li span.year {
+  color: var(--fox-list-text);
+  font-weight: 600;
+}
+
+.moviesListContainer li span.count {
+  color: var(--fox-background-sec);
+}
